@@ -1,0 +1,39 @@
+<nav class="floating-menu">
+  <div class="sm-nav-toggler">
+      <i class="fal fa-bars fa-lg"></i>
+      <i class="fal fa-times fa-lg"></i>
+  </div>
+  <ul class="main-menu">
+      <li>
+          <a routerLink="/home" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="ripple">
+              <i class="fal fa-home fa-lg"></i>
+          </a>
+      </li>
+      <li>
+          <a (click)="scroll(about)" href="/home#about" class="ripple scrolling">
+              <i class="fal fa-user fa-lg"></i>
+          </a>
+      </li>
+      <li>
+          <a routerLink="/home/curriculum" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="ripple">
+              <i class="fal fa-book fa-lg"></i>
+          </a>
+      </li>
+      <li>
+          <a routerLink="/home/services" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="ripple">
+              <i class="fal fa-code fa-lg"></i>
+          </a>
+      </li>
+      <li>
+          <a routerLink="/home/pricing" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="ripple">
+              <i class="fal fa-hand-holding-usd fa-lg"></i>
+          </a>
+      </li>
+      <li>
+          <a routerLink="/home/contact" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="ripple">
+              <i class="fal fa-comments fa-lg"></i>
+          </a>
+      </li>
+  </ul>
+  <div class="menu-bg"></div>
+</nav>

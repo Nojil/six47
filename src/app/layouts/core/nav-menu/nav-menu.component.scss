@@ -1,0 +1,16 @@
+.navbar {
+    background: none !important;
+    color: rgb(152, 152, 152);
+    a {
+        color: rgb(152, 152, 152); 
+    }
+
+    a:hover {
+        color: darken(rgb(152, 152, 152), 20%);
+    }
+}
+
+.navbar-brand {
+    height: auto;
+    width: 75px;
+}
