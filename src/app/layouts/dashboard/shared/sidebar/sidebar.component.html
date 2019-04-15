@@ -1,0 +1,40 @@
+<!-- <div class="sidebar-wrapper">
+
+</div> -->
+
+<div class="sidebar-wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header mt-2 d-flex  justify-content-center align-items-center">
+            <img class="logo" src="../../../../../assets/images/logo/six47Logo_v4_trans.png" alt="">
+            <h3 class="ml-3">Six47</h3>
+        </div>
+
+        <ul class="list-unstyled components mt-4">
+            <li>
+                <a routerLink="/dashboard" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"> <i class="fal fa-home mr-3 fa-lg"></i> Home</a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/calendar" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"> <i class="fal fa-calendar-alt mr-3 fa-lg"></i> Calendar</a>
+            </li>
+            <li>
+                <a href="#finacialSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fal fa-briefcase mr-3 fa-lg"></i> Financial</a>
+                <ul class="collapse list-unstyled" id="finacialSubmenu">
+                    <li>
+                        <a routerLink="/dashboard/billing" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">Billing</a>
+                    </li>
+                    <li>
+                        <a routerLink="/dashboard/invoices" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">Invoices</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/dashboard/videos" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"><i class="fal fa-film mr-3 fa-lg"></i> Videos</a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/resources" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"><i class="fal fa-file-code mr-3 fa-lg"></i> Resources</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

@@ -24,6 +24,13 @@ import { RegisterComponent } from './shared/register/register.component';
 
 import { DashboardComponent } from './layouts/dashboard/pages/dashboard/dashboard.component';
 import { Guard } from './guard.service';
+import { SidebarComponent } from './layouts/dashboard/shared/sidebar/sidebar.component';
+import { NavbarComponent } from './layouts/dashboard/shared/navbar/navbar.component';
+import { CalendarComponent } from './layouts/dashboard/pages/calendar/calendar.component';
+import { BillingComponent } from './layouts/dashboard/pages/billing/billing.component';
+import { InvoicesComponent } from './layouts/dashboard/pages/invoices/invoices.component';
+import { VideosComponent } from './layouts/dashboard/pages/videos/videos.component';
+import { ResourcesComponent } from './layouts/dashboard/pages/resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +48,14 @@ import { Guard } from './guard.service';
     HeroComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidebarComponent,
+    NavbarComponent,
+    CalendarComponent,
+    BillingComponent,
+    InvoicesComponent,
+    VideosComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,

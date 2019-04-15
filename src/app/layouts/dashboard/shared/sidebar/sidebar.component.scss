@@ -1,0 +1,96 @@
+.bootstrap-navbar .sidebar-wrapper, .sidebar .sidebar-wrapper {
+    position: relative;
+    max-height: calc(100vh - 75px);
+    min-height: 100%;
+    overflow: auto;
+    width: 260px;
+    z-index: 4;
+    padding-bottom: 75px;
+    
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    min-width: 260px;
+    max-width: 260px;
+}
+
+#sidebar.active {
+    margin-left: -260px;
+}
+
+#sidebar {
+    min-width: 260px;
+    max-width: 260px;
+    min-height: 100vh;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar li>a {
+    color: #fff;
+    margin: 5px 15px;
+    opacity: .86;
+    border-radius: 4px;
+    display: block;
+}
+
+#sidebar>li {
+    position: relative;
+    display: block;
+}
+#sidebar ul li   > a.active, a[aria-expanded="true"] {
+    color: #fff;
+    opacity: 1;
+    background: rgba(255,255,255,.23);
+}
+
+
+
+#sidebar ul li:hover>a {
+    background: rgba(255,255,255,.13);
+    opacity: 1;
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+}

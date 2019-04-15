@@ -701,4 +701,13 @@ body {
       display: inline-block;
     }
   }
-  
+
+.card-nonhover:hover {
+  -webkit-transform: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.card-nonhover:hover:after {
+  width: 0 !important;
+}
